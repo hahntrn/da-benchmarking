@@ -1,0 +1,36 @@
+=== Epoch 1 ===
+Training...
+Loss:	 0.29374222971722663
+auROC:	 0.9472295846985737
+auPRC:	 0.9485305471554752
+Confusion Matrix (at t = 0.5):
+ [[238492  34508]
+ [ 35325 237675]]
+Evaluating on source validation data...
+Validation loss: 0.1890583077520132
+Loss:	 0.18905829915872827
+auROC:	 0.9774301592251672
+auPRC:	 0.4734260132862764
+Confusion Matrix (at t = 0.5):
+ [[925698  68413]
+ [   451   5438]]
+Evaluating on target validation data...
+Validation loss: 0.2723390265703201
+Loss:	 0.2723390132024068
+auROC:	 0.9528831309235246
+auPRC:	 0.45252530007129516
+Confusion Matrix (at t = 0.5):
+ [[879613 112466]
+ [   886   7035]]
+BasicModel(
+  (conv): Conv1d(4, 240, kernel_size=(20,), stride=(1,))
+  (relu): ReLU()
+  (maxpool): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  (lstm): LSTM(240, 32, batch_first=True)
+  (fc1): Linear(in_features=32, out_features=1024, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (fc2): Linear(in_features=1024, out_features=512, bias=True)
+  (fc_final): Linear(in_features=512, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+  (loss): BCELoss()
+)
