@@ -6,7 +6,7 @@ from pyfaidx import Fasta
 from torch.utils.data import Dataset
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"  # either 3 or 6
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # either 3 or 6
 GENOMES = { "mouse" : "/users/kcochran/genomes/mm10_no_alt_analysis_set_ENCODE.fasta",
             "human" : "/users/kcochran/genomes/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta" }
 
