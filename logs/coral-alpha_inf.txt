@@ -1,0 +1,33 @@
+=== Epoch 1 ===
+Training...
+100%
+1365/1365 [10:22<00:00, 2.25it/s]
+Loss:	 0.2929262488124495
+auROC:	 0.9475299739765728
+auPRC:	 0.9486218657749107
+Confusion Matrix (at t = 0.5):
+ [[238642  34358]
+ [ 35443 237557]]
+
+Evaluating on source validation data...
+100%
+1000/1000 [09:51<00:00, 1.65it/s]
+Validation loss: 0.15667942263185977
+Loss:	 0.1566794154803644
+auROC:	 0.9780933108316514
+auPRC:	 0.4956637353017569
+Confusion Matrix (at t = 0.5):
+ [[951543  42568]
+ [   600   5289]]
+
+Evaluating on target validation data...
+100%
+1000/1000 [09:27<00:00, 1.87it/s]
+Validation loss: 0.23620950581133365
+Loss:	 0.2362094954954508
+auROC:	 0.9463823902928814
+auPRC:	 0.48716309742940567
+Confusion Matrix (at t = 0.5):
+ [[908496  83583]
+ [  1149   6772]]
+End of epoch 0
