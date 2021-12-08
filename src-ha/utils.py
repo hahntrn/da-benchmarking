@@ -23,6 +23,14 @@ def print_confusion_matrix(preds, labels):
     conf_matrix = confusion_matrix(labels, preds_binarized)
     print("Confusion Matrix (at t = 0.5):\n", conf_matrix)
 
+def plot_loss(loss, run_name):
+    plt.plot(loss)
+    y = loss
+    x = range(len(loss))
+    m, b = np.polyfit(x, y, 1)
+    plt.plot(x, m*x + b)
+    plt.savefig('../figures/' + run_name + '.jpg')
+    return m
 
 def torch_cov(x, rowvar=False, bias=False, ddof=None, aweights=None):
     """Estimates covariance matrix like numpy.cov
